@@ -131,7 +131,7 @@ public class PremiumStall implements Stall {
         this.ownerName = ownerName;
     }
     
-    public void setProjector(Integer tvSet) {
+    public void setProjector(Integer projector) {
         this.projector = projector;
     }
     
@@ -186,7 +186,7 @@ public class ExecutiveStall implements Stall {
         this.ownerName = ownerName;
     }
     
-    public void setScreen(Integer tvSet) {
+    public void setScreen(Integer screen) {
         this.screen = screen;
     }
     
