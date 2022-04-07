@@ -1,3 +1,5 @@
+// Main.java
+
 import java.util.Scanner;
 import java.text.SimpleDateFormat;
 
@@ -39,4 +41,35 @@ public class Main {
         sc.close();
 	}
 
+}
+
+
+// Event.java
+
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+public class Event {
+    
+    private String eventName;
+    private Date startDate,endDate;
+    
+    Event(){}
+    Event(String eventName, Date startDate, Date endDate) {
+        this.eventName = eventName;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+    
+    public void setEventName(String eventName) { this.eventName = eventName; }
+    public void setStartDate(Date startDate) { this.startDate = startDate; }
+    public void setEndDate(Date endDate) { this.endDate = endDate; }
+    public String getEventName() { return eventName; }
+    public Date getStartDate() { return startDate; }
+    public Date getEndDate() { return endDate; }
+    
+    public long getDifferenceDays() {
+        long diff = endDate.getTime() - startDate.getTime();
+        return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
+    }
 }
