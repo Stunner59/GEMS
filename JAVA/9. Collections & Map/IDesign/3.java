@@ -4,8 +4,8 @@ import java.util.*;
 
 public class Main {
 
-	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args){
+	    Scanner sc = new Scanner(System.in);
         Map<String,List<Address>> myMap = new HashMap<String,List<Address>>();
         System.out.println("Enter the number of address");
         Integer n = sc.nextInt();

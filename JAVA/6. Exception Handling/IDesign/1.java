@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Main {
 	public static void main(String args[]) throws IOException {
-	    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String name;
         Double deposit,costPerDay;
         System.out.println("Enter the Item type details:");
@@ -31,7 +31,7 @@ public class Main {
 // ItemType.java
 
 public class ItemType {
-	String name;
+    String name;
     Double deposit,costPerDay;
     
     ItemType() {}
@@ -42,6 +42,7 @@ public class ItemType {
         this.costPerDay = costPerDay;
     }
     
+    @Override
     public String toString()
     {
         return "Name:"+this.name+"\nDeposit:"+String.format("%.01f",this.deposit)+"\nCost Per Day:"+String.format("%.01f",this.costPerDay);

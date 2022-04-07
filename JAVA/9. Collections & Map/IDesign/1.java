@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
 	public static void main(String args[]) throws Exception{
-		List<String> halls = new ArrayList<String>();
+	  List<String> halls = new ArrayList<String>();
         int n;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of halls:");

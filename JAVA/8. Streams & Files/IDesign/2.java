@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Main {
 	public static void main(String args[]) throws Exception {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter the number of users:");
         int n = Integer.parseInt(br.readLine());
         ArrayList users = new ArrayList<>();
@@ -56,7 +56,7 @@ public class UserBO {
 
 	public static void writeFile(ArrayList<User> userList, BufferedWriter bw) throws Exception {
 		for (User user : userList) {
-    	 bw.write(user.toString());   
+    	 bw.write(user);   
 		}
 	}
 }

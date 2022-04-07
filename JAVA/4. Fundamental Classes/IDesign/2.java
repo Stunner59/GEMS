@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	  Scanner sc = new Scanner(System.in);
         StringBuilder sb = new StringBuilder();
         System.out.println("Enter the number of items:");
         Integer nItems = sc.nextInt();
@@ -32,9 +32,8 @@ public class Main {
 // Item.java
 
 public class Item {
-	private String name,type;
+    private String name,type;
     private Integer cost,availableQuantity;
-    
     
     Item() {}
     

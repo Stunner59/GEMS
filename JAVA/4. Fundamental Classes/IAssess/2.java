@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	  Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of Events");
         int n = sc.nextInt();
         Event[] events = new Event[n];

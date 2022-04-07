@@ -3,7 +3,7 @@ import java.text.SimpleDateFormat;
 
 public class Main {
 	public static void main(String []args) {
-		Scanner sc = new Scanner(System.in);
+	  Scanner sc = new Scanner(System.in);
         SimpleDateFormat format1 = new SimpleDateFormat("EEE, MMM d, yy"); 
         SimpleDateFormat format2 = new SimpleDateFormat("dd.MM.yyyy"); 
         SimpleDateFormat format3 = new SimpleDateFormat("dd/MM/yyyy"); 

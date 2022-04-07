@@ -1,8 +1,10 @@
+// Main.java
+
 import java.util.Scanner; 
 public class Main {
 
 	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
+	  Scanner sc = new Scanner(System.in);
         System.out.println("Enter the country name");
         String name = sc.nextLine();
         System.out.println("Enter the country code");
@@ -14,4 +16,17 @@ public class Main {
         sc.close();
 	}
 
+}
+
+
+// Country.java
+
+public class Country{
+    public String name,countryCode,isdCode;
+    
+    Country(String name, String countryCode, String isdCode) {
+        this.name = name;
+        this.countryCode = countryCode;
+        this.isdCode = isdCode;
+    }
 }

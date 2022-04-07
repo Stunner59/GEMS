@@ -1,4 +1,4 @@
-// Main
+// Main.java
 
 import java.util.Scanner;
 
@@ -45,7 +45,7 @@ public class Main {
 }
 
 
-// Event
+// Event.java
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -75,7 +75,7 @@ public abstract class Event {
 }
 
 
-// Exhibition
+// Exhibition.java
 
 import java.util.Date;
 import java.text.SimpleDateFormat;
@@ -112,7 +112,7 @@ public class Exhibition extends Event {
 
 
 
-// StageEvent
+// StageEvent.java
 
 import java.util.Date;
 import java.text.SimpleDateFormat;

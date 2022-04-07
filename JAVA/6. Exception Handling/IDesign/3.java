@@ -2,7 +2,7 @@
 
 import java.io.*;
 public class Main {
-	public static void main(String[] args)throws Exception{
+	public static void main(String[] args) throws Exception{
 		
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter the contact details");
@@ -16,7 +16,6 @@ public class Main {
             System.out.print(e);
         }
         
-    
 	}
 }
 
@@ -26,10 +25,10 @@ public class Main {
 
 public class ContactDetail {
 	
-    private String mobile;
-	private	String alternateMobile;
-	private	String landLine;
-	private	String email;
+      private String mobile;
+	private String alternateMobile;
+	private String landLine;
+	private String email;
 	private String address;
 	public ContactDetail(String mobile, String alternateMobile, String landLine, String email, String address) {
 		this.mobile = mobile;
@@ -72,10 +71,11 @@ public class ContactDetail {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-    public String toString()
-    {
-        return "Mobile:"+this.mobile+"\nAlternate mobile:"+this.alternateMobile+"\nLandLine:"+this.landLine+"\nEmail:"+this.email+"\nAddress:"+this.address;
-    }
+      @Override
+      public String toString()
+      {
+          return "Mobile:"+this.mobile+"\nAlternate mobile:"+this.alternateMobile+"\nLandLine:"+this.landLine+"\nEmail:"+this.email+"\nAddress:"+this.address;
+      }
 }
 
 
@@ -84,20 +84,19 @@ public class ContactDetail {
 public class ContactDetailBO {
 		
 	public static void validate(String mobile,String AlternateMobile) throws DuplicateMobileNumberException {
-       if(mobile.equals(AlternateMobile)) {
-        throw new DuplicateMobileNumberException("Mobile number and alternate mobile number are same");
-       }
+          if(mobile.equals(AlternateMobile)) {
+              throw new DuplicateMobileNumberException("Mobile number and alternate mobile number are same");
+          }
     }
 }
 
 
 // DuplicateMobileNumberException.java
 
-
 public class DuplicateMobileNumberException extends Exception {
     
     public DuplicateMobileNumberException(String errorMessage) {  
-    super(errorMessage);  
+        super(errorMessage);  
     }  
     
 }

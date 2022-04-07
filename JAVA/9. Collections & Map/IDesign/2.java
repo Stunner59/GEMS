@@ -3,7 +3,7 @@ public class Main {
 
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-		Set<String> emails = new LinkedHashSet<String>();
+	  Set<String> emails = new LinkedHashSet<String>();
         String res;
         do {
             System.out.println("Enter Email address");
@@ -15,11 +15,10 @@ public class Main {
         String[] search = (sc.nextLine()).split(",");
         List<String> searchList = new ArrayList<String>();
         Collections.addAll(searchList,search);
-        if(emails.containsAll(searchList)) {
+        if(emails.containsAll(searchList))
             System.out.println("Email addresses are present");
-        } else {
+        else
             System.out.println("Email addresses are not present");
-        } 
         sc.close();
 	}
 

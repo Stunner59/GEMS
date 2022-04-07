@@ -1,4 +1,4 @@
-// Main
+// Main.java
 
 import java.util.Scanner;
 
@@ -38,14 +38,14 @@ public class Main {
 }
 
 
-// Stall
+// Stall.java
 
 public interface Stall {
     abstract void display();
 }
 
 
-// GoldStall
+// GoldStall.java
 
 public class GoldStall implements Stall {
     private String stallName,ownerName;
@@ -99,7 +99,7 @@ public class GoldStall implements Stall {
 }
 
 
-// PremiumStall
+// PremiumStall.java
 
 public class PremiumStall implements Stall {
     private String stallName,ownerName;
@@ -154,7 +154,7 @@ public class PremiumStall implements Stall {
 }
 
 
-// ExecutiveStall
+// ExecutiveStall.java
 
 public class ExecutiveStall implements Stall {
     private String stallName,ownerName;

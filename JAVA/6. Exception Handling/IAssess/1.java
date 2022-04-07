@@ -6,7 +6,7 @@ import java.text.ParseException;
 public class Main {
 
 	public static void main(String[] args) {
-		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy-HH:mm:ss");
+	  SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy-HH:mm:ss");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the stage event start date and end date");
         try {

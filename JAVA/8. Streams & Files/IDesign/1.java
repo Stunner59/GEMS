@@ -22,7 +22,8 @@ public class Main {
 
 
 public class User {
-	private String name,email,username,password;
+	
+    private String name,email,username,password;
     
     User() {}
     
